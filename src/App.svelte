@@ -3,7 +3,7 @@
 
 	async function getProjects(){
 		try{
-			const res = await fetch("/api/v1/projects");
+			const res = await fetch("https://berry-projects-api.herokuapp.com/projects");
 			const text = await res.json();
 			return text;
 		}
